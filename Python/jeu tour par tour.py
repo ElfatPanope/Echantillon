@@ -1,6 +1,14 @@
 Joueur1 = input('Entrez le nom du Joueur1:').capitalize()
-PvJoueur1 = int(input('Entrez le nombre de pv du Joueur1:')),str("Pv")
-Joueur2 = input('Entrez le nom du Joueur2:').capitalize()
-PvJoueur2 = int(input('Entrez le nombre de pv du Joueur2:')),str("Pv")
+PvJoueur1 = int(input('Entrez le nombre de pv du Joueur1:'))
 
-print(Joueur1,PvJoueur1,Joueur2,PvJoueur2)
+Joueur2 = input('Entrez le nom du Joueur2:').capitalize()
+PvJoueur2 = int(input('Entrez le nombre de pv du Joueur2:'))
+
+print()
+
+message = Joueur1 + '(' + str(PvJoueur1) + 'PV) affronte ' + Joueur2 + '(' + str(PvJoueur2) + 'PV)'
+print('+' * (len(message)+4))
+print('+',message, '+')
+print('+'*(len(message)+4))
+
+print()
