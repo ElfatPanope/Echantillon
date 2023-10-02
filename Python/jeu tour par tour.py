@@ -3,10 +3,13 @@ Pv1 = int(input('Entrez le nombre de pv du Joueur1:'))
 
 Joueur2 = input('Entrez le nom du Joueur2:').capitalize()
 Pv2 = int(input('Entrez le nombre de pv du Joueur2:'))
+# 'int' retourne la valeur entiere numérique de l'input
 
 print()
 
 message = Joueur1 + '(' + str(Pv1) + 'PV) affronte ' + Joueur2 + '(' + str(Pv2) + 'PV)'
+# '+' dans les variables '=' et ',' dans les print()
+#'str' retourne la valeur en caractère de chaine de la varibale -> impossible d'associé une valeur 'int'
 print('+' * (len(message)+4))
 print('+',message, '+')
 print('+'*(len(message)+4))
@@ -32,6 +35,7 @@ att2 =int(input(Joueur2+',combien de dégats infligez-vous à '+ Joueur1 + '?'))
 print()
 Pv1 -= att2
 msg1 = Joueur2 + ' attaque ' + Joueur1 +' et lui inflige '+ str(att2) +' PV '
+# le code défile de haut en bas donc on peut réutiliser les dernières variables utilisées auparavant -> moins de variables = - d'erreur potentielles
 msg2 = Joueur1 + ' a maintenant ' + str(Pv1) +' PV '
 max_size = max(len(msg1), len(msg2))
 msg1 += ' ' * (max_size - len(msg1))
