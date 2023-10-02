@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Accueil- Robbie Lens Photographie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Manrope&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="image/logo.png" alt="Logo Robbie Lens">
+            <div class="lienflex">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="portefolio.html">Portefolio</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="accueil-introduction">
+            <div>
+                <h1>Robbie Lens Photographie</h1>
+                <p>
+                    Où <em>professionalisme</em> s’allie avec <em>passion</em>.
+                    Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion
+                    qui m’anime : capturer l’essence de chaque instant.
+                </p>
+                <a href="#contact" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>
+            </div>
+            <img src="image/robbie-lens.png" title="Robbie Lens" alt="Photo robbie Lens">
+        </section>
+        <section class="accueil-photos">
+            <h2>Mon dernier projet</h2>
+            <div>
+                <img src="image/element-1.png" title="image1">
+                <img src="image/element-2.png" title="image2">
+                <img src="image/element-3.png" title="image3">
+            </div>
+            <div>
+                <img src="image/element-4.png" title="image4">
+                <img src="image/element-5.png" title="image5">
+                <img src="image/element-6.png" title="image6">
+            </div>
+        </section>
+        <section id="contact" class="section-contact" >
+            <h2>Parlons de votre projet</h2>
+            <form method="get" action="#">
+                <div class="nom-mail">
+                    <div class="form-colum">
+                        <label for="prenom">nom</label>
+                        <input type="text" name="prenom" id="prenom">
+                    </div>
+                    <div class="form-colum">
+                        <label for="e-mail">email</label>
+                        <input type="email" name="e-mail" id="e-mail">
+                    </div>
+                </div>
+                <label for="message">message</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <input type="submit" value="ENVOYER" class="cta">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="image/logo.png" alt="Logo Robbie Lens">
+        <div>
+            <a href="https://twitter.com/" target="_blank" class="logo">
+                <img src="image/twitter.png" title="Twitter" alt="Logo Twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="logo">
+                <img src="image/instagram.png" title="Instagram" alt="Logo Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
